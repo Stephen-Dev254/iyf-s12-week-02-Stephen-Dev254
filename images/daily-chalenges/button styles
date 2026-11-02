@@ -1,0 +1,10 @@
+    <!-- DAY 1: Button Styles Challenge -->
+    <section>
+      <h2>Day 1: Button Styles 🟢</h2>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn-primary">Primary Button</button>
+        <button class="btn-secondary">Secondary Button</button>
+        <button class="btn-danger">Danger Button</button>
+        <button class="btn-disabled" disabled>Disabled Button</button>
+      </div>
+    </section>
