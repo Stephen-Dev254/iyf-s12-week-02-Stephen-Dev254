@@ -1,0 +1,64 @@
+/* ==================== TASK 3.1: RESET + BASE ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+    /* TASK 3.4: COLOR SYSTEM - Coolors palette for Stephen-Dev254 */
+    --color-primary: #3b5bdb;
+    --color-primary-light: #748ffc;
+    --color-primary-dark: #2b45b2;
+    --color-secondary: #ff922b;
+    --color-background: #fdf6f0;
+    --color-text: #333333;
+    --color-muted: #868e96;
+    --color-white: #ffffff;
+
+    /* TASK 3.3: TYPOGRAPHY SYSTEM */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding: 20px;
+}
+
+/* TASK 3.1: HEADINGS */
+h1 { font-family: var(--font-heading); font-size: var(--font-4xl); font-weight: 700; margin-bottom: 15px; color: #111; }
+h2 { font-family: var(--font-heading); font-size: var(--font-3xl); font-weight: 600; margin: 25px 0 12px; }
+h3 { font-family: var(--font-heading); font-size: var(--font-2xl); font-weight: 500; margin: 20px 0 10px; }
+p { margin-bottom: 15px; }
+small { font-size: var(--font-sm); color: var(--color-muted); }
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { color: var(--color-primary-dark); text-decoration: underline; }
+
+/* NAVBAR - TASK 4 */
+.nav-container { display: flex; justify-content: space-between; align-items: center; background: #222; padding: 15px 25px; margin-bottom: 30px; border-radius: 6px; }
+.logo { color: var(--color-white); font-weight: 700; font-size: var(--font-xl); }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; }
+
+/* Keep your other box model styles */
+.box { width: 250px; background: #ffd8a8; text-align: center; }
+.content-box { margin-bottom: 10px; }
+.padding-box { padding: 20px; margin-bottom: 10px; }
+.border-box { padding: 20px; border: 5px solid #e8590c; margin-bottom: 10px; }
+.margin-box { padding: 20px; border: 5px solid #e8590c; margin: 40px 0; }
