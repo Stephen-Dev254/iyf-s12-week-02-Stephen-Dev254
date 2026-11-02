@@ -40,3 +40,4 @@ clone index.html in a browser or can run npm install then npm start
 
  ## live Demo
  
+ (view live demo) https://stephen-dev254.github.io/iyf-s12-week-02-Stephen-Dev254/
