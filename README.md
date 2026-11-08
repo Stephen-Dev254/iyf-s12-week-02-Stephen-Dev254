@@ -31,10 +31,14 @@ clone index.html in a browser or can run npm install then npm start
 
  **Relative vs Absolute Units** px is fixed and breaks responsiveness, rem is scalable. Using 12.5rem = 200px (12.5 * 16px) lets the whole site scale if user changes base font size.**Flexbox vs Grid:** Flexbox is for 1D (navbar row), Grid is for 2D (projects gallery). Using justify-content: space-between + align-items: center centered my navbar perfectly.Design Systems: CSS variables in :root prevent color chaos. Changing one --color-primary updates entire site.
 
- ##Challenges Faced
+ ## Challenges Faced
+ 
  **Image Path Bug:** My index.html had a line break in <img src="images/profile.jpg\n"> causing broken image on Pages. Fixed by using https://placehold.co placeholder which always loads and is required by the checker. Lesson: check for invisible newline characters.
+ 
  **Placeholder Domain:** Used placeholder.co instead of placehold.co initially - placeholder.co is a dead domain flagged as unreplaced placeholder. Fixed spelling.
+ 
  **CSS File Naming:** Created style.css but Task 3.1 requires styles.css (with s). Renamed file and updated all <link> tags to styles.css to match spec.
+ 
  **Margin Collapse on Inline Elements:** In Exercise 3, margin-top/bottom didn't work on <span>. Learned inline elements ignore vertical margins - need display: inline-block or block.
 
 
